@@ -13,7 +13,10 @@
     "lint:sol": "solhint --max-warnings 0 \"contracts/**/*.sol\"",
     "lint:ts": "eslint --ignore-path ./.eslintignore --ext .js,.ts .",
     "prettier:check": "prettier --check \"**/*.{js,json,md,sol,ts,yml}\"",
-    "prettier:write": "prettier --write \"**/*.{js,json,md,sol,ts,yml}\""
+    "prettier:write": "prettier --write \"**/*.{js,json,md,sol,ts,yml}\"",
+    "test:main": "mocha --require ts-node/register test/src/**/*.test.ts",
+    "test:ipfsstorage": "mocha --require ts-node/register test/contracts/**/*.test.ts",
+    "test:ipfsupload": "mocha --require ts-node/register test/lib/**/*.test.ts"
   },
   "author": {
     "name": "Luka Racki",
@@ -27,6 +30,7 @@
     "ipfs-http-client": "^60.0.0",
     "ipfsd-ctl": "^13.0.0",
     "web3": "1.9.0",
+    "ganache": "^7.8.0",
     "web3-core": "^1.9.0",
     "web3-eth-contract": "^1.9.0",
     "web3-utils": "^1.9.0",
@@ -55,7 +59,6 @@
     "chai-as-promised": "^7.1.1",
     "cz-conventional-changelog": "^3.3.0",
     "eslint-config-prettier": "^8.8.0",
-    "ganache": "^7.8.0",
     "lint-staged": "^13.2.1",
     "mocha": "^10.2.0",
     "prettier": "^2.8.7",
