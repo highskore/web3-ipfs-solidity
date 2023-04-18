@@ -22,11 +22,11 @@ jobs:
       - name: Install dependencies
         run: npm i
 
-      - name: Run main tests
+      - name: Run Integration Tests
         run: npm run test:main
 
-      - name: Run ipfsupload tests
+      - name: Run Unit Tests - IPFS Lib
         run: npm run test:ipfsupload
 
-      - name: Run ipfsstorage tests
+      - name: Run Unit Tests - Smart Contract
         run: npm run test:ipfsstorage
