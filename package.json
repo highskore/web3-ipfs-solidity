@@ -19,7 +19,7 @@
     "name": "Luka Racki",
     "url": "https://github.com/lukaracki"
   },
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "bn.js": "^5.2.1",
     "fs-extra": "^11.1.1",
