@@ -18,7 +18,15 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: 18.16
-      - run: npm ci
 
-      - name: Run tests
-        run: npm run test
+      - name: Install dependencies
+        run: npm i
+
+      - name: Run main tests
+        run: npm run test:main
+
+      - name: Run ipfsupload tests
+        run: npm run test:ipfsupload
+
+      - name: Run ipfsstorage tests
+        run: npm run test:ipfsstorage
